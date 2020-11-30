@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>My Family Book</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>My Family Book</h1>
+        <div></div>
+        <img src="OIP.jfif" id="Display">
+        <div></div>
+        <h2 id="Name"></h2>
+        <div></div>
+        <button id="Next" onclick="Update()">Next</button>
+        <script>
+            var Names =["Kabeer Sharma","Naini Sharma","Pratima Sharma","Rishi Vishwkarma"];
+            var Images =["Kabeer.gif","Sister.png","Mother.png","Father.png"];
+            var i =0;
+            function Update(){
+                document.getElementById("Display").src=Images[i];
+                document.getElementById("Name").innerHTML=Names[i];
+                i++;
+                if(i==4){
+                    i=0;
+                }
+            }       
+             </script>
+
+    </body>
+</html>
